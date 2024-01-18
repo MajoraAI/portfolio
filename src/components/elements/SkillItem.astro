@@ -1,0 +1,15 @@
+---
+import Picture from './Picture.astro';
+interface Props {
+    path: string,
+    name: string,
+    color: string
+}
+
+const { path, name, color } = Astro.props
+---
+
+<div class=" flex items-center gap-x-4">
+    <Picture class={['h-24', color]} path={path} />
+    <span class="text-3xl">{name}</span>
+</div>
