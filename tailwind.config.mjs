@@ -6,6 +6,9 @@ export default {
 			colors: {
 				'laravel-red': 'red',
 				'react-blue': 'rgb(97, 219, 251)',
+			},
+			fontFamily: {
+				'montserrat': 'Montserrat'
 			}
 		},
 	},
