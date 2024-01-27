@@ -1,13 +1,15 @@
 ---
 interface Props {
-    id: string,
-    class?: string,
-
+  id: string,
+  class?: string,
 }
-const { id } = Astro.props
+
+const { id } = Astro.props;
+
 ---
-<section id={id} class={`border-b-2 border-b-slate-200 ${Astro.props.class || ''}`}>
-    <div class="py-64 text-center flex flex-col justify-center gap-y-5 container mx-auto px-6">
-        <slot />
-    </div>
+
+<section id={id} class={`border-b-2 border-b-slate-200 ${Astro.props.class || ""}`}>
+  <div class="py-64 text-center space-y-5 container mx-auto px-6">
+    <slot />
+  </div>
 </section>
