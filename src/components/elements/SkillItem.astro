@@ -9,7 +9,7 @@ interface Props {
 const { path, name, color } = Astro.props
 ---
 
-<div class=" flex items-center gap-x-4 bg-slate-100 rounded-lg p-4">
+<div class="flex justify-center items-center gap-x-4 bg-slate-100 rounded-lg p-4">
     <Picture class={['h-28', color]} path={path} />
     <span class="text-3xl">{name}</span>
 </div>
